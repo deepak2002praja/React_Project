@@ -1,0 +1,62 @@
+*/ h3 {
+    border-bottom: 5px solid rgb(238, 34, 34);
+    display: inline;
+    padding-bottom: 2px;
+}
+
+
+.industry-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* For Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    /* For Chrome, Safari */
+    color: transparent;
+    /* Ensures Firefox doesn't show black text */
+
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.edge {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 10px 15px;
+    color: #f0f0f0;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .industry-heading {
+        font-size: 1.8rem;
+    }
+
+    .edge {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* Optional animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
